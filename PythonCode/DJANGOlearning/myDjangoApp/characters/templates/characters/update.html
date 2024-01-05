@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
+	{% load static %}
 </head>
     <body>
-    <script type="text/javascript" src="make_charJSON.js"></script>
-        <form id="char_form" action="" method="POST" name="myForm">
+	<script src = 'https://code.jquery.com/jquery-3.6.3.min.js'></script>
+    <script type="text/javascript" src="{% static 'characters/make_charJSON.js' %}"></script>
+        <form id="char_form" action="" method="POST" name="myForm"> {% csrf_token %}
             <p><label for="fname">First Name:</label>
                 <input type="text" name="first_name" id="fname"></p>
 
