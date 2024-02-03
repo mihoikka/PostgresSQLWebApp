@@ -30,4 +30,3 @@ def updateChar(request):
     context = RequestContext(request, {"test":"this worked"})
     return HttpResponse(template.render(context))
     
-{'charId': {'firstName': 'h', 'lastName': 'h', 'curr_time': 6}, 'ability': 'h', 'role': 'h', 'description': 'h', 'items': 'Enter items here, separated by commas', 'relations': 'Enter new relationships, separated by commas'}
